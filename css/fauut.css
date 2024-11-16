@@ -1,0 +1,627 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+        /* background-color: #f4f4f4; */
+    
+    
+}
+ .centered-box {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     /* width: 150px; */
+    background-color: #f4f4f4;
+        color: white;
+     /* Adjust this value to change the overall width */
+     height: 100vh;
+     /* Adjust this value to change the overall height */
+
+     /* Red border for the outer box */
+     padding:0 250px;
+     /* Padding to create space inside */
+     box-sizing: border-box;
+ }
+header {
+    /* Take up the remaining space */
+        background-color: #f4f4f4;
+    /* Background color for header */
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0% !important;
+    /* padding-bott: 0% !important; */
+        box-sizing: border-box;
+    align-items: center;
+    
+}
+
+/* Top Links */
+.bagoftop{
+    background-color: #28360c;
+}
+.top-links {
+    background-color: #28360c;
+    /* Background color for top links */
+    /* width: 980px; */
+    margin: 0  44px 0;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* padding: 10px 0; */
+}
+
+.top-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+        /* White color with 70% opacity */
+        /* opacity: 70.0%; */
+    
+        font-size: 12px;
+        line-height: 24px;
+        font-family: 'Open Sans", Arial, sans-serif';
+    margin: 0 10px;
+
+}
+
+
+.top-links a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center items horizontally */
+    padding: 20px;
+    /* Add padding for spacing around the content */
+    background-color: #687d3a;
+    /* Set background color */
+    margin: 0;
+    /* Ensure no margin is applied */
+    width: 100%;
+    /* Make sure it takes the full width */
+}
+
+.logo {
+    width: 706px;
+    /* Set the width to 706px */
+    height: 70px;
+    /* Set the height to 70px */
+    margin: 0px 0px 10px;
+    /* Set margin to 0px 0px 10px */
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center items horizontally */
+    padding: 20px;
+    /* Add padding for spacing around the content */
+    background-color: #687d3a;
+    /* Set background color */
+    margin: 0;
+    /* Ensure no margin is applied */
+    width: 100%;
+}
+
+/* Main Links */
+.main-links {
+    background:linear-gradient(to bottom, #687d3a, #43571a);
+    /* Background color for main links */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+padding-bottom: 50px;
+}
+
+.main-links a {
+    text-decoration: none;
+    color: white;
+    /* Reduced margin between main links */
+    font-size: 16px;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.main-links a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    /* Positioning for the dropdown */
+    display: inline-block;
+    /* Allows dropdown to sit inline with links */
+}
+
+.submenu {
+    display: none;
+    border-radius: 4px;
+      margin-top: px;
+    /* Hide submenu by default */
+    position: absolute;
+    /* Position submenu absolutely */
+background-color: #28360c;
+    /* Match background color of top links */
+    min-width: 160px;
+    /* Minimum width for submenu */
+    /* background-color: #f4f4f4; */
+    /* Shadow for depth */
+    z-index: 1;
+    /* Bring it above other content */
+    padding: 0;
+    /* Remove padding from submenu */
+    list-style: none;
+    /* Remove bullet points */
+}
+
+.submenu li {
+    width: 100%;
+    /* Ensure submenu items take full width */
+}
+
+.submenu li a {
+ 
+    /* Text color for submenu items */
+    /* padding: 10px 15px; */
+    /* Padding around submenu items */
+    text-decoration: none;
+    /* Remove underline */
+    display: block;
+    /* Make submenu links block-level */
+color: rgba(255, 255, 255, 0.7);
+    /* White color with 70% opacity */
+    /* opacity: 70.0%; */
+
+
+    font-size: 12px;
+    line-height: 24px;
+    font-family: 'Open Sans", Arial, sans-serif';
+    /* Font size for submenu items */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.dropdown:hover .submenu {
+    display: block;
+    /* Show submenu on hover */
+}
+
+.submenu li a:hover {
+    background-color: #575f47;
+    
+    /* Background color on hover for submenu items */
+}
+
+/* Show the submenu when hovering over "Affiliated Madaris" */
+.main-links .dropdown:hover>.submenu {
+    display: block;
+    /* Show submenu on hover */
+}
+
+/* Show the nested submenu when hovering over a specific submenu item */
+.submenu li:hover>.nested-submenu {
+    display: block;
+    /* Show nested submenu on hover */
+    position: absolute;
+    /* Position nested submenu absolutely */
+    left: 100%;
+    /* Position it to the right of the parent */
+    top: 0;
+    /* Align it vertically with the parent item */
+}
+
+/* Nested submenu styles */
+.nested-submenu {
+    display: none;
+    /* Hide nested submenu by default */
+    background-color: #f4f4f4;
+    /* Match background color */
+    min-width: 160px;
+    /* Minimum width for nested submenu */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    /* Shadow for depth */
+    list-style: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove padding */
+}
+
+.nested-submenu li {
+    width: 100%;
+    /* Ensure nested submenu items take full width */
+}
+
+.nested-submenu li a {
+    color: white;
+    /* Text color for nested submenu items */
+    padding: 10px 15px;
+    /* Padding around nested submenu items */
+    text-decoration: none;
+    /* Remove underline */
+    display: block;
+    /* Make nested submenu links block-level */
+    font-size: 14px;
+    /* Font size for nested submenu items */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.nested-submenu li a:hover {
+    background-color: #687d3a;
+    /* Background color on hover for nested submenu items */
+}
+
+/* Image Slider */
+.image-slider {
+    width: 100%;
+    max-width: 1000px;
+    /* Max width for the slider */
+    margin: 5px auto;
+    /* Further reduced margin to lessen space */
+    overflow: hidden;
+    /* Hide overflow */
+    position: relative;
+    /* Position relative for layout */
+    background-color: transparent;
+    /* Set to transparent to use default browser background */
+}
+
+.slides {
+    display: flex;
+    /* Use flexbox for sliding effect */
+    width: 500%;
+    /* Set width for sliding effect */
+    transition: transform 0.5s ease-in-out;
+    /* Smooth transition */
+}
+
+.slide {
+    width: 100%;
+    /* Full width for each slide */
+    flex: 1;
+    /* Flex 1 to distribute equally */
+    display: flex;
+    /* Center image */
+    justify-content: center;
+    align-items: center;
+}
+.text-centers a{
+    font-family: "Open Sans",
+        Arial,
+        sans-serif !important;
+    margin-left: 8px;
+    font-size: 13px;
+    color: #758b41 !important;
+
+}
+.card-title{
+    text-align: center;
+    font-family: 'Lato,Arial,sans-serif';
+    font-size: 20px;
+    line-height: 24px;
+
+    padding-bottom: 12px;
+}
+.slide img {
+    width: 100%;
+    /* Full width for images */
+    height: auto;
+    /* Maintain aspect ratio */
+    background-color: transparent;
+    /* Remove green background from images */
+}
+
+/* Radio Buttons */
+.radio-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* Space above radio buttons */
+    margin-bottom: 20px;
+    /* Add margin below radio buttons for spacing */
+}
+
+.radio-buttons input[type="radio"] {
+    margin: 0 5px;
+    /* Space between radio buttons */
+    cursor: pointer;
+    /* Pointer cursor for radio buttons */
+}
+
+/* Slide Navigation Logic */
+#slide1:checked~.slides {
+    transform: translateX(0);
+    /* Show first slide */
+}
+
+#slide2:checked~.slides {
+    transform: translateX(-100%);
+    /* Show second slide */
+}
+
+#slide3:checked~.slides {
+    transform: translateX(-200%);
+    /* Show third slide */
+}
+
+#slide4:checked~.slides {
+    transform: translateX(-300%);
+    /* Show fourth slide */
+}
+
+#slide5:checked~.slides {
+    transform: translateX(-400%);
+    /* Show fifth slide */
+}
+
+
+/* Sidebar Layout */
+.main-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+        background-color: #f4f4f4;
+    padding: 20px;
+
+    border-left: 1px solid #ccc;
+    width: 709px !important;
+    height: 100%
+;
+}
+
+.right-sidebar ul {
+    list-style: none;
+}
+
+.right-sidebar ul li {
+    margin: 5px 0;
+    
+}
+
+.right-sidebar ul li a {
+    color: #566732;
+    text-decoration: none;
+    font-size: 12px !important;
+    line-height: 10px !important;
+    position: relative;
+    padding-left: 20px;
+
+}
+
+.right-sidebar ul li a::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: #566732;
+}
+
+.right-sidebar ul li a:hover {
+    text-decoration: underline;
+}
+        .carousel-container {
+            padding: 0 2rem;
+            /* Adjust padding as needed */
+        }
+    
+        .carousel-inner img {
+            height: 400px;
+            /* Set a fixed height if needed */
+            object-fit: cover;
+        }
+
+
+                .card {
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+                }
+        
+                .card img {
+                    border-bottom: 1px solid #ccc;
+                }
+.mycontainer{
+    display: flex;
+        height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    /* Set the width of the sidebar */
+   
+    /* Sidebar background color */
+    color: white;
+    /* Text color in the sidebar */
+    padding: 15px;
+    /* Padding around the text */
+}
+html{
+        background-color: #f4f4f4;
+}
+.content {
+    flex: 1;
+    /* Take up the remaining space */
+        background-color: #f4f4f4;
+    /* Main content background color */
+    padding: 15px;
+    /* Padding around the text */
+}
+
+
+
+
+/* footer */
+.left {
+    padding-right: 443px;
+    text-align: left;
+}
+
+.right {
+
+    text-align: right;
+    font-size: 11px;
+    line-height: 20px;
+    word-spacing: 12px;
+    color: #758841 !important;
+}
+
+.footer {
+    width: 100%;
+    background: linear-gradient(180deg, #6e8a37, #354516);
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-container {
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Lato, Arial, sans-serif';
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+.footer-section ul {
+    font-family: 'Lato, Arial, sans-serif';
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #c2e7a9;
+}
+
+.footer-section ul li a {
+    color: #c2e7a9;
+    text-decoration: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: #333333;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    background: linear-gradient(to right, #3c4b1f, #3d550e);
+    color: #c2e7a9;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-size: 12px;
+    height: 89px;
+    width: 100%;
+}
+
+.footer-bottom a {
+    color: #c2e7a9;
+    margin: 0 5px;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+.textdesign {
+    font-family: 'Open Sans", Arial, sans-serif' !important;
+
+
+    font-size: 12px;
+
+    line-height: 20px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+
+}
+
+   .marquee-container {
+       overflow: hidden;
+       white-space: nowrap;
+    background-color: #687d3a;
+       /* Green background */
+       color: white;
+       padding: 10px;
+   }
+
+   .marquee-text {
+       display: inline-block;
+       animation: scroll-left 60s linear infinite;
+       /* Slower speed */
+   }
+
+   @keyframes scroll-left {
+       from {
+           transform: translateX(100%);
+       }
+
+       to {
+           transform: translateX(-100%);
+       }
+   }
+
+         .carousel-inner img {
+             height: 500px;
+             /* Adjust this based on your requirement */
+             object-fit: contain;
+             /* Ensures full image is visible without cropping */
+         }
+
+                   .carousel-inner img {
+                       height: 500px;
+                       /* Adjust this based on your requirement */
+                       object-fit: contain;
+                       /* Ensures full image is visible without cropping */
+                   }

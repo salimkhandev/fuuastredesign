@@ -1,0 +1,267 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+}
+
+/* Centered Container */
+.centered-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #28360c !important;
+    /* Removed fixed height for better responsiveness */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0 !important;
+    box-sizing: border-box;
+}
+
+/* Top Links */
+.bagoftop,
+.top-links {
+    
+    background-color: #28360c;
+}
+
+.top-links {
+    display: flex;
+    justify-content: center;
+    margin: 0 44px 0;
+    text-align: center;
+}
+
+.top-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0 10px;
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #687d3a;
+    width: 100%;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main Links */
+.main-links {
+    background: linear-gradient(to bottom, #687d3a, #43571a);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.main-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #28360c;
+    min-width: 160px;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.submenu li a {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 8px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+}
+
+.submenu li a:hover {
+    background-color: #575f47;
+}
+
+/* Image Slider */
+.image-slider {
+    max-width: 1000px;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+/* Sidebar Layout */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    width: 100%;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+    /* Limits sidebar width */
+    box-sizing: border-box;
+}
+
+.right-sidebar ul {
+    list-style: none;
+}
+
+.right-sidebar ul li a {
+    color: #566732;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.right-sidebar ul li a::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: #566732;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(180deg, #6e8a37, #354516);
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h3 {
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #c2e7a9;
+}
+
+.footer-section ul li a {
+    color: #c2e7a9;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background: linear-gradient(to right, #3c4b1f, #3d550e);
+    color: #c2e7a9;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-bottom a {
+    color: #c2e7a9;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.myFooter{
+    position: relative;
+        width: 300060.58px !important;
+        
+    
+}
